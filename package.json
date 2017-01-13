@@ -1,0 +1,28 @@
+{
+  "name": "analytics-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/britbroet/analytics-rollup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/britbroet/analytics-rollup/issues"
+  },
+  "homepage": "https://github.com/britbroet/analytics-rollup#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "express-ejs-layouts": "^2.2.0",
+    "fs": "0.0.1-security",
+    "request": "^2.79.0",
+    "save": "^2.3.0"
+  }
+}
