@@ -20,8 +20,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 
 
-app.get('/', function(req, res) {
-  res.render('index');
+// app.get('/', function(req, res) {
+//   res.render('index');
+// });
+
+app.get('/', stormpath.getUser, function (req, res) {
+  if (req.user) {
+  	res.render('index', {user: req.user});
+  	console.log('User: ', req.user);
+  } else {
+    res.send('Not logged in');
+  }
+
 });
 
 
